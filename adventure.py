@@ -18,7 +18,13 @@ def initialPrint():
     time.sleep(2)
     print("After living a fulfilled life, the king died")
     time.sleep(2)
-    print('His last words were "I have kept all my gold somewhere in the ocean and left clues around. Whoever finds it will be the new pirate king \"')
+    print('His last words were ')
+    time.sleep(2)
+    print('"I have kept all my gold somewhere in the ocean"')
+    time.sleep(2)
+    print('"I have left clues around"')
+    time.sleep(2)
+    print('"Whoever finds it will be the new pirate king"')
     time.sleep(2)
     print("New pirate groups started forming in search of the gold")
     time.sleep(2)
@@ -26,7 +32,9 @@ def initialPrint():
 
 
 def secondPrint():
-    print("You have decided to join the game. Your first stop is to get money for a boat")
+    print("You have decided to join the game.")
+    time.sleep(2)
+    print(' Your first stop is to get money for a boat')
     time.sleep(2)
     print("You enter a casino, and decided to play a bet")
     time.sleep(2)
@@ -78,7 +86,9 @@ def questionChoice():
     correct = (questionNumber1 + (questionNumber2*questionNumber1))
     if int(response) == correct:
 
-        print('Right Answer. You have sent bandits to delay other players for 12 days')
+        print('Right Answer.')
+        time.sleep(2)
+        print('You have sent bandits to delay other players for 12 days')
         score = 12
     else:
         print('Wrong answer, correct answer is')
@@ -91,14 +101,17 @@ def questionChoice():
 def mixedChoice():
     print('You met a genie, he asks you to roll.')
     time.sleep(2)
-    print('The average will determine to some extent how long the opponent\'s journey will take')
+    print('The average will determine to some extent')
+    print('how long the opponent\'s journey will take')
     time.sleep(2)
     halfDays = rollDice()/2
     print('Half is '+str(halfDays))
 
     questionNumber1 = random.randint(1, 100)
     questionNumber2 = random.randint(1, 100)
-    print('You have been stopped by bandits. They help you if you answer their question right')
+    print('You have been stopped by bandits.')
+    time.sleep(2)
+    print('They help you if you answer their question right')
     time.sleep(2)
     print('Or they delay you')
     time.sleep(2)
@@ -128,7 +141,7 @@ def randomChoice():
     time.sleep(2)
     print('He forces you to roll')
     time.sleep(2)
-    print('The output will be the number of days you\'ll spend to reach your destination')
+    print('The output will be the number of days to your destination')
     totalDays = rollDice()
     time.sleep(2)
     print('You rolled '+str(totalDays))
